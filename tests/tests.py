@@ -76,7 +76,7 @@ class IcecastStatusTests(unittest.TestCase):
         IcecastStatus config dict based on it"""
         config_root = ET.parse("test_icecast.xml").getroot()
         self.icecast_config = {
-            'server_url':   
+            'server_url':   config_root
 
     def test_no_show(self):
         

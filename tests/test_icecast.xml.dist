@@ -1,0 +1,59 @@
+<icecast>
+    <!-- Test Icecast config for unit testing. It should be very
+    obvious by looking at the default fields that this config file
+    should never be used for a production Icecast server, and in
+    fact should not be used anywhere but a trusted network where
+    no one can exploit the weak testing passwords. -->
+
+    <location>Earth</location>
+    <admin>unit_test@test_icecast</admin>
+
+    <limits>
+        <clients>1</clients>
+        <sources>1</sources>
+        <queue-size>524288</queue-size>
+        <client-timeout>30</client-timeout>
+        <header-timeout>15</header-timeout>
+        <source-timeout>10</source-timeout>
+        <burst-on-connect>0</burst-on-connect>
+        <burst-size>0</burst-size>
+    </limits>
+
+    <authentication>
+        <!-- Please do not use this on a publicly-accessible server -->
+        <source-password>test-password</source-password>
+        <relay-password>relay-password</relay-password>
+        <admin-user>admin</admin-user>
+        <admin-password>admin-password</admin-password>
+    </authentication>
+
+    <hostname>test_icecast</hostname>
+
+    <listen-socket>
+        <port>8000</port>
+    </listen-socket>
+
+    <http-headers>
+        <header name="Access-Control-Allow-Origin" value="*" />
+    </http-headers>
+
+    <paths>
+        <!-- set these to the /share/ subdirectory of your Icecast installation -->
+        <basedir>./</basedir>
+        <webroot>./web</webroot>
+        <adminroot>./admin</adminroot>
+
+        <logdir>./icecast_logs</logdir>
+    </paths>
+
+    <logging>
+        <accesslog>access.log</accesslog>
+        <errorlog>error.log</errorlog>
+        <loglevel>3</loglevel>
+        <logsize>10000</logsize>
+    </logging>
+
+    <security>
+        <chroot>0</chroot>
+    </security>
+</icecast>
