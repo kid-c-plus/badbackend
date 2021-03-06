@@ -1,0 +1,5 @@
+badbackend:
+    IcecastStatus:
+        server_url:         <<Server Name Here>>
+        default_mountpoint: <<Default Mountpoint Name Here>>
+        cache_timeout:      5
