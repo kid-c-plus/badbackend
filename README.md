@@ -7,12 +7,12 @@ Modular, extensible API framework & deployment-ready implementation for Icecast 
 
 - Download into an appropriate directory such as `/var/www/` if you're using Apache:
 
-        cd /var/www
-        git clone https://github.com/kid-c-plus/badbackend.git 
+      cd /var/www
+      git clone https://github.com/kid-c-plus/badbackend.git 
 
 - Install dependencies:
 
-        pip3 install -r requirements.txt
+      pip3 install -r requirements.txt
 
 ## Usage
 
