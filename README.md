@@ -1,9 +1,9 @@
 # BAD BACKEND
 ### <span style="color: blue">(it's good, actually)</span>
 
-Modular, extensible API framework & deployment-ready implementation for Icecast radio station content additions, such as comments, show themes, and more. 
+Modular, extensible API framework & deployment-ready implementation for Icecast radio station content additions, such as comments, show themes, and more. Currently under development.
 
-## Installation
+## Installation (when ready)
 
 - Download into an appropriate directory such as `/var/www/` if you're using Apache:
 
@@ -14,7 +14,7 @@ Modular, extensible API framework & deployment-ready implementation for Icecast 
 
       pip3 install -r requirements.txt
 
-## Usage
+## Usage (when ready)
 
 The recommended usage is to serve this as a WSGI script using the provided run.wsgi script with the webserver of your choice. I recommend Apache, as detailed [here](https://www.howtoforge.com/tutorial/python-apache-mod_wsgi_ubuntu/), but you can also run it with a pure Python server such as gunicorn using this command to run on port 5000:
 
